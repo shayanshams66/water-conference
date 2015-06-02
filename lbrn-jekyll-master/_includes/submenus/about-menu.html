@@ -1,0 +1,57 @@
+<ul class="nav nav-pills srp-nav">
+  {% if page.title == "About Us" %}
+  <li class="active">
+  {% else %}
+  <li>
+  {% endif %}
+    <a href="{{ site.baseurl }}about">About Us</a>
+  </li>
+
+  {% if page.title == "Admin Core" %}
+  <li class="active">
+  {% else %}
+  <li>
+  {% endif %}
+    <a href="{{ site.baseurl }}about/admin">Admin Core</a>
+  </li>
+ 
+  {% if page.title == "Bioinformatics, Biostatistics, and Computational Biology Core" %}
+  <li class="active">
+  {% else %}
+  <li>
+  {% endif %}
+    <a href="{{ site.baseurl }}about/bbc">BBC Core</a>
+  </li>
+
+ {% if page.title == "Molecular and Cell Biology Core" %}
+  <li class="active">
+  {% else %}
+  <li>
+  {% endif %}
+    <a href="{{ site.baseurl }}about/mcb">MCBR Core</a>
+  </li>
+
+  {% if page.title == "Project Investigators" %}
+  <li class="active">
+  {% else %}
+  <li>
+  {% endif %}
+    <a href="{{ site.baseurl }}about/project-investigators">Project Investigators</a>
+  </li>
+
+  {% if page.title == "Partner Institutes" %}
+  <li class="active">
+  {% else %}
+  <li>
+  {% endif %}
+    <a href="{{ site.baseurl }}about/partners">Partner Institutes</a>
+  </li>
+
+  {% if page.title == "LBRN Committees" %}
+  <li class="active">
+  {% else %}
+  <li>
+  {% endif %}
+    <a href="{{ site.baseurl }}about/committees">LBRN Committees</a>
+  </li>
+</ul>

@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="page">
+  <h2>LBRN Summer Research Program</h2>
+  
+  {% include submenus/srp-menu.html %}
+  
+  <hr style ="margin-top: 0">
+  
+  {% if page.title != "Program Info" %}
+    <h3>{{ page.title }}</h3>
+  {% endif %}
+
+  {{ content }}
+</div>

@@ -1,0 +1,42 @@
+---
+layout: default
+title: Home
+---
+
+<div class="hero-unit">
+  {% include carousel.html %}
+</div>
+<h2>News</h2>
+<div class="row">
+  <div class="span8">
+    <div class="feed">
+      {% for post in site.posts limit: 2%}
+        <div class="feed-post well">
+          <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+          <small><h6>by {{ post.author }} | {{ post.date | date_to_string }}</h6></small>
+          {{ post.content }}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="span4">
+    <h4><strong>Registration Fee</strong></h4>
+	   <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <table>
+        <tr><td><input type="hidden" name="on0" value="Registration Fee">Registration Fee</td></tr><tr><td><input type="text" name="os0" maxlength="200"></td></tr>
+      </table>
+      <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
+
+  </div>
+  
+  <!--<div class="span4">
+    <a class="twitter-timeline" href="https://twitter.com/lbrn_inbre" height="900px" data-widget-id="365872231160619008">Tweets by @lbrn_inbre</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+  </div>-->
+  
+</div>

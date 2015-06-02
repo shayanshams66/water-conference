@@ -1,0 +1,49 @@
+<ul class="nav nav-pills srp-nav">
+  {% if page.title == "General Information" %}
+  <li class="active">
+  {% else %}
+  <li>
+  {% endif %}
+    <a href="{{ site.baseurl }}events/bioinformatics-conference">General Information</a>
+  </li>
+
+  {% if page.title == "Registration and Posters" %}
+  <li class="active">
+  {% else %}
+  <li>
+  {% endif %}
+    <a href="{{ site.baseurl }}events/bioinformatics-conference/registration">Registration and Posters</a>
+  </li>
+
+  {% if page.title == "Hotel Information" %}
+  <li class="active">
+  {% else %}
+  <li>
+  {% endif %}
+    <a href="{{ site.baseurl }}events/bioinformatics-conference/hotel">Hotel Information</a>
+  </li>
+
+  {% if page.title == "Covered Expenses" %}
+  <li class="active">
+  {% else %}
+  <li>
+  {% endif %}
+    <a href="{{ site.baseurl }}events/bioinformatics-conference/expenses">Covered Expenses</a>
+  </li>
+  
+	{% if page.title == "Location and Parking" %}
+  <li class="active">
+  {% else %}
+  <li>
+  {% endif %}
+    <a href="{{ site.baseurl }}events/bioinformatics-conference/location">Location and Parking</a>
+  </li>
+  
+  {% if page.title == "Committees" %}
+  <li class="active">
+  {% else %}
+  <li>
+  {% endif %}
+    <a href="{{ site.baseurl }}events/bioinformatics-conference/committees">Committees</a>
+  </li>
+</ul>
